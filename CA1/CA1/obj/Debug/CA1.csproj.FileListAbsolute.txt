@@ -1,0 +1,7 @@
+C:\Users\vkqwn\Documents\college\y2\oop\ca1\CA1\CA1\obj\Debug\CA1.csprojAssemblyReference.cache
+C:\Users\vkqwn\Documents\college\y2\oop\ca1\CA1\CA1\obj\Debug\CA1.csproj.CoreCompileInputs.cache
+C:\Users\vkqwn\Documents\college\y2\oop\ca1\CA1\CA1\bin\Debug\CA1.exe.config
+C:\Users\vkqwn\Documents\college\y2\oop\ca1\CA1\CA1\bin\Debug\CA1.exe
+C:\Users\vkqwn\Documents\college\y2\oop\ca1\CA1\CA1\bin\Debug\CA1.pdb
+C:\Users\vkqwn\Documents\college\y2\oop\ca1\CA1\CA1\obj\Debug\CA1.exe
+C:\Users\vkqwn\Documents\college\y2\oop\ca1\CA1\CA1\obj\Debug\CA1.pdb
