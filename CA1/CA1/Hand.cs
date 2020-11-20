@@ -10,19 +10,24 @@ namespace CA1
 {
     class Hand
     {
-        // This class mimics a player's hand. 
+        // This class mimics a player's / dealers hand. 
         // It initializes a new deck and list of cards for a hand.
+        // Includes methods for adding cards to the hand, and comparing 2 hands
+        // Note that on construction, a deck class is constructed. This means
+        // That each hand has a unique deck. All hand classes use the same
+        // random seed.
 
-
-        public Deck DeckCards { get; set; }
-        public List<Card> HandCards { get; set; }
+        #region properties
+        public Deck DeckCards { get; private set; }
+        public List<Card> HandCards { get; private set; }
         // The score is the total of cards, assuming the ace is equal to 1
-        public int Score { get; set; }
+        public int Score { get; private set; }
         // the AcesScore is the total, assuming the ace is equal to 11
-        public int AcesScore { get; set; }
-
+        public int AcesScore { get; private set; }
+        
 
         static Random rnd = new Random();
+        #endregion properties
 
         public Hand()
         {
@@ -40,8 +45,6 @@ namespace CA1
             int temp = rnd.Next(DeckCards.Cards.Count);
             Card result = DeckCards.Cards[temp];
             DeckCards.Cards.RemoveAt(temp);
-
-            Console.WriteLine(DeckCards.Cards.Count);
             HandCards.Add(result);
 
             // If the Rank of the resulting card is 0, then it is an Ace. Which can equal to both 1 or 11
